@@ -597,6 +597,7 @@ justify-content: center;
 
 .div-img {
   padding: 20px 24px;
+  border-top: none;
   border-bottom: 30px;
   border-right: 30px;
   border-width: 30px;
