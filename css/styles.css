@@ -153,7 +153,7 @@ p {
   background-color: #2f303a;
   margin: 0 auto;
   padding: 200px 0;
-  background-image: url(/images/fon.jpg);
+  background-image: url(/images/Img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -218,8 +218,6 @@ p {
   background-color: #f5f4fa;
 }
 
-.advances-items {
-}
 
 .section-title {
   font-family: "Roboto";
