@@ -94,35 +94,35 @@ p {
   margin-left: auto;
 }
 
-.header-icon{
+.header-icon {
   margin-right: 10px;
   align-items: center;
   justify-content: center;
   fill: #757575;
 }
 
-.header-nav-mail{
-width: 16;
-height: 12px;
-display: flex;
-align-items: center;
-justify-content: center;
+.header-nav-mail {
+  width: 16;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header-nav-phone{
-width: 10;
-height: 16px;
-display: flex;
-align-items: center;
-justify-content: center;
-fill: #757575;
+.header-nav-phone {
+  width: 10;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #757575;
 }
 
-.header-icon:hover{
+.header-icon:hover {
   fill: #2196f3;
 }
 
-.navigation-address-phone{
+.navigation-address-phone {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -133,10 +133,9 @@ fill: #757575;
 }
 .navigation-address-phone:hover {
   color: #2196f3;
-} 
+}
 
-
-.navigation-address-mail{
+.navigation-address-mail {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -146,11 +145,9 @@ fill: #757575;
   padding: 32px 0;
 }
 
-.navigation-address-mail:hover{
+.navigation-address-mail:hover {
   color: #2196f3;
 }
-
-
 
 .section-main {
   background-color: #2f303a;
@@ -203,27 +200,25 @@ fill: #757575;
   border-color: #ffffff;
 }
 
-
 .main-menu {
   display: flex;
   gap: 30px;
   text-align: start;
   flex-grow: 1;
 }
-.advances-link{
+.advances-link {
   margin-bottom: 30px;
   width: 100%;
-height: 120px;
-border: 1px solid #F5F4FA;
-border-radius: 4px;
-display: flex;
-align-items: center;
-justify-content: center;
-background-color:#F5F4FA ;
+  height: 120px;
+  border: 1px solid #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
 }
 
-.advances-items{
-
+.advances-items {
 }
 
 .section-title {
@@ -253,7 +248,6 @@ background-color:#F5F4FA ;
   margin: 0 auto;
   text-align: center;
 }
-
 
 .section-content-title {
   font-family: "Roboto";
@@ -287,7 +281,6 @@ img {
   background-color: #f5f4fa;
   padding: 94px;
 }
-
 
 .section-team-title {
   font-weight: 700;
@@ -335,7 +328,7 @@ img {
   margin-bottom: 30px;
   width: 44px;
   height: 44px;
-  display: inline-flex ;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -349,22 +342,20 @@ img {
   align-items: center;
 }
 
-.boxcard-link:hover{
+.boxcard-link:hover {
   fill: #ffffff;
 }
 
-
-.boxcard-icon-team:hover  {
+.boxcard-icon-team:hover {
   background-color: #2196f3;
   cursor: pointer;
 }
 
-.boxcard-icon-team:hover .boxcard-link{
+.boxcard-icon-team:hover .boxcard-link {
   fill: #ffffff;
 }
 
-
-.section-logo{
+.section-logo {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
@@ -372,58 +363,57 @@ img {
   background-color: #ffffff;
 }
 
-.clients-title{
-margin-bottom: 50px;
-justify-content: center;
-align-items: center;
-display: flex;
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
+.clients-title {
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
-.clients-list{
+.clients-list {
   display: flex;
   gap: 30px;
 }
 
-.clients-item{
-width: 170px;
-height: 92px;
+.clients-item {
+  width: 170px;
+  height: 92px;
 }
 
-.clients-link{
-width: 100%;
-height: 92px;
-border: 1px solid #AFB1B8;
-border-radius: 5px;
-display: flex;
-align-items: center;
-justify-content: center;
+.clients-link {
+  width: 100%;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.clients-link:hover{
+.clients-link:hover {
   border-color: #2196f3;
   cursor: pointer;
 }
 
-.clients-logo{
+.clients-logo {
   align-items: center;
   justify-content: center;
   display: flex;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
-.clients-logo:hover{
+.clients-logo:hover {
   fill: #2196f3;
 }
 
-.clients-link:hover .clients-logo{
+.clients-link:hover .clients-logo {
   color: #2196f3;
   fill: #2196f3;
-  
 }
 
 .footer {
@@ -478,19 +468,14 @@ justify-content: center;
   color: #2196f3;
 }
 
-
-.container-net{
-  
-
-
+.footer-box {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+  text-align: start;
 }
 
-
-
-
 .net-title {
-  display: flex;
-  justify-content: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -500,12 +485,12 @@ justify-content: center;
   font-family: "Roboto";
   font-style: normal;
   color: #ffffff;
-  
+  text-align: left;
 }
 
 .net-list {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 10px;
 }
 
@@ -529,8 +514,6 @@ justify-content: center;
   height: 20px;
   fill: #ffffff;
 }
-
-
 
 /*PORTFOLIO CSS*/
 
