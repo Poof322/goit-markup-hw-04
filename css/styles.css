@@ -82,10 +82,6 @@ p {
   display: block;
 }
 
-.navigation:hover {
-  color: #2196f3;
-}
-
 .header-address {
   display: flex;
   align-items: center;
@@ -93,34 +89,16 @@ p {
   gap: 50px;
   margin-left: auto;
 }
-
-.header-icon {
+.icon-nav-mail{
   margin-right: 10px;
-  align-items: center;
-  justify-content: center;
-  fill: #757575;
 }
 
-.header-nav-mail {
-  width: 16;
-  height: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
+.icon-nav-phone{
+  margin-right: 10px;
 }
 
-.header-nav-phone {
-  width: 10;
-  height: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: #757575;
-}
-
-.header-icon:hover {
-  fill: #2196f3;
-}
 
 .navigation-address-phone {
   font-style: normal;
@@ -131,9 +109,12 @@ p {
   color: #757575;
   padding: 32px 0;
 }
-.navigation-address-phone:hover {
+
+.navigation-address-phone:hover{
   color: #2196f3;
+  fill: #2196f3;
 }
+
 
 .navigation-address-mail {
   font-style: normal;
@@ -141,20 +122,19 @@ p {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+ color: #757575;
   padding: 32px 0;
 }
 
-.navigation-address-mail:hover {
-  color: #2196f3;
+.navigation-address-mail:hover{
+ color: #2196f3;
+ fill: #2196f3;
 }
 
 .section-main {
-  background-color: #2f303a;
   margin: 0 auto;
   padding: 200px 0;
-  background-image: url(../images/Img.jpg) ;
-  background-image: radial-gradient(#C4C4C4);
+  background-image: linear-gradient(#2F303A66,#2F303A66), url(../images/Img.jpg) ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -274,11 +254,9 @@ img {
 }
 
 .section {
-  width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
   background-color: #f5f4fa;
-  padding: 94px;
+  padding: 94px 0;
 }
 
 .section-team-title {
@@ -355,11 +333,7 @@ img {
 }
 
 .section-logo {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 94px;
-  background-color: #ffffff;
+  padding: 94px 0;
 }
 
 .clients-title {
@@ -569,7 +543,9 @@ img {
   color: #ffffff;
   cursor: pointer;
   border-color: #2196f3;
+ box-shadow: 0px 3px 1px 0px #0000001A;
 }
+
 
 .element-menu {
   display: flex;
@@ -577,14 +553,18 @@ img {
   gap: 30px;
 }
 
+
+.element-img{
+  display: block;
+}
+.element-img:hover{
+  box-shadow: 1px 4px 6px 0px #00000029;
+}
+
+
 .div-img {
   padding: 20px 24px;
   border-top: none;
-  border-bottom: 30px;
-  border-right: 30px;
-  border-width: 30px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
   border: 1px solid #eeeeee;
 }
 
