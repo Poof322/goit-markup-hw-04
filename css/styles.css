@@ -94,13 +94,17 @@ p {
   margin-left: auto;
 }
 
-.icon-nav-mail {
-  margin-right: 10px;
+  .icon-nav-mail{
+  margin-right:10px;
+ fill: currentColor; 
+ 
 }
+ .icon-nav-phone{
+  margin-right:10px;
+  fill: currentColor; 
+  
+ }
 
-.icon-nav-phone {
-  margin-right: 10px;
-}
 
 .navigation-address-phone {
   font-style: normal;
@@ -110,11 +114,12 @@ p {
   letter-spacing: 0.02em;
   color: #757575;
   padding: 32px 0;
+  display: flex;
+  
 }
 
 .navigation-address-phone:hover {
-  color: #2196f3;
-  fill: #2196f3;
+  color: #2196f3; 
 }
 
 .navigation-address-mail {
@@ -125,11 +130,12 @@ p {
   letter-spacing: 0.02em;
   color: #757575;
   padding: 32px 0;
+  display: flex;
 }
 
 .navigation-address-mail:hover {
   color: #2196f3;
-  fill: #2196f3;
+ 
 }
 
 .section-main {
@@ -300,6 +306,11 @@ img {
   color: #757575;
   text-decoration: none;
   padding-bottom: 16px;
+}
+
+
+.box-icon-list{
+  padding-bottom: 30px;
 }
 .boxcard-icon-team {
   gap: 10px;
