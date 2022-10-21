@@ -305,7 +305,11 @@ img {
 }
 
 
-
+.box-icon-list{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
 
 .boxcard-link {
@@ -316,6 +320,7 @@ img {
   justify-content: center; 
   align-items: center; 
   border-radius: 50%; 
+  margin-bottom: 30px;
 }
 
 .boxcard-link:hover {
