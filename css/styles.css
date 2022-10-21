@@ -94,17 +94,13 @@ p {
   margin-left: auto;
 }
 
-  .icon-nav-mail{
-  margin-right:10px;
- fill: currentColor; 
- 
+.icon-nav-mail {
+  margin-right: 10px;
 }
- .icon-nav-phone{
-  margin-right:10px;
-  fill: currentColor; 
-  
- }
 
+.icon-nav-phone {
+  margin-right: 10px;
+}
 
 .navigation-address-phone {
   font-style: normal;
@@ -114,12 +110,12 @@ p {
   letter-spacing: 0.02em;
   color: #757575;
   padding: 32px 0;
-  display: flex;
-  
+  align-items: center;
 }
 
 .navigation-address-phone:hover {
-  color: #2196f3; 
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .navigation-address-mail {
@@ -130,12 +126,12 @@ p {
   letter-spacing: 0.02em;
   color: #757575;
   padding: 32px 0;
-  display: flex;
+  align-items: center;
 }
 
 .navigation-address-mail:hover {
   color: #2196f3;
- 
+  fill: #2196f3;
 }
 
 .section-main {
@@ -305,34 +301,26 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   text-decoration: none;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 
-.box-icon-list{
-  padding-bottom: 30px;
-}
-.boxcard-icon-team {
-  gap: 10px;
-  margin-bottom: 30px;
-  width: 44px;
-  height: 44px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
+
+
 
 .boxcard-link {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-  justify-content: center;
-  align-items: center;
+  width: 44px; 
+  height: 44px; 
+  fill: afb1b8; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 50%; 
 }
 
 .boxcard-link:hover {
   fill: #ffffff;
+  background-color: #2196f3;
 }
 
 .boxcard-icon-team:hover {
@@ -548,13 +536,12 @@ img {
   border-radius: 4px;
   background-color: #f5f4fa;
   border: 0;
+  cursor: pointer;
 }
 
 .button-portfolio:hover {
   background-color: #2196f3;
   color: #ffffff;
-  cursor: pointer;
-  border-color: #2196f3;
   box-shadow: 0px 3px 1px 0px #0000001a;
 }
 
@@ -573,8 +560,8 @@ img {
 
 .div-img {
   padding: 20px 24px;
-  border-top: none;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .main-title-portfolio {
