@@ -259,7 +259,26 @@ address {
 
 .features-list-item {
   width: 264px;
+  
 }
+
+.features-icon{
+  position: relative;
+  display: block;
+  width: 264px;
+  height: 112px;
+  background-color: #F4F4FD;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+ 
+}
+
+.features-icon-item{
+  background-color: #4d5ae5;
+}
+
 
 .features-list-title {
   margin-bottom: 8px;
@@ -305,6 +324,10 @@ address {
   width: 264px;
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
+}
+
+.icon-list{
+  
 }
 
 
