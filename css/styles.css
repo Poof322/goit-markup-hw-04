@@ -169,8 +169,8 @@ address {
 }
 
 .nav-list-link:hover,
-.nav-list-l.social-icon-link {
-  color: #404bbf;
+.nav-list-link:focus {
+  color: #404bbf;     
 }
 
 
@@ -218,7 +218,9 @@ address {
   background-color: #2e2f42;
   color: #ffffff;
    
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7)) ,url(../images/people-office\ 1.jpg) ;
+  background-image: 
+  linear-gradient(rgba(46, 47, 66, 0.7)) 
+  ,url(../images/people-office\ 1.jpg) ;
   background-repeat: no-repeat;
   background-size: 1440px;
   background-position: center;
@@ -437,6 +439,7 @@ address {
   position: relative;
   overflow: hidden;
   width: calc((100% - 48px) / 3);
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
  .portfolio-list-item:hover{
