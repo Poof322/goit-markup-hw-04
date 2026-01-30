@@ -520,12 +520,18 @@ address {
 
 
 .footer {
+  
   padding: 100px 0;
   background-color: var(--primary-title);
 
 }
 
+.footer-container{
+  display: flex;
+}
+
 .footer-logo-link {
+  display: block;
   font-family: Raleway;
   font-weight: 700;
   font-size: 18px;
@@ -544,4 +550,45 @@ address {
   letter-spacing: 0.02em;
   margin-top: 16px;
   color: #f4f4fd
+}
+
+.footer-social{
+  margin-left: 120px;
+}
+
+.footer-social-title{
+font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-social-list{
+  display: flex;
+  column-gap: 16px;
+}
+
+.footer-social-item{
+  
+}
+
+.footer-social-icon-link{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--Primary-Brand);
+  fill: #F4F4FD;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-icon-link:hover ,
+.footer-social-icon-link:focus{
+  background-color: #31D0AA;
+
 }
