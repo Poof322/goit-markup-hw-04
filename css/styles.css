@@ -174,6 +174,7 @@ address {
   height: 4px;
   border-radius: 2px;
   background-color: var(--Primary-Brand);
+  color: #404bbf;
 }
 
 .nav-list-link:hover,
@@ -410,9 +411,12 @@ box-shadow:
   align-items: center;
   border-radius: 50%;
   background-color: var(--Primary-Brand);
-  fill: #F4F4FD;
+ 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.social-icon-link svg {
+fill: #f4f4fd;
 }
 
 .social-icon-link:hover,
@@ -602,8 +606,12 @@ box-shadow:
   align-items: center;
   border-radius: 50%;
   background-color: var(--Primary-Brand);
-  fill: #F4F4FD;
+  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-icon-link svg{
+fill: #F4F4FD;
 }
 
 .footer-social-icon-link:hover,
