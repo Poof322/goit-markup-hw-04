@@ -79,7 +79,6 @@ address {
   display: flex;
   align-items: center;
   gap: 76px;
-  padding: 24px 0;
 }
 
 .visually-hidden {
@@ -134,6 +133,7 @@ address {
 }
 
 .nav-list {
+ 
   display: flex;
   gap: 40px;
   font-weight: 500;
@@ -141,19 +141,35 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
 .nav-list-item {
+
+}
+
+
+.nav-list-link {
   display: block;
   padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.nav-list-item:hover,
-.nav-list-item:focus {
+.cover::after {
+  position: relative;
+  top: 25px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--Primary-Brand);
+  content: "";
+}
+
+.nav-list-link:hover,
+.nav-list-l.social-icon-link {
   color: #404bbf;
 }
 
@@ -164,7 +180,7 @@ address {
 
 .address-list {
   display: flex;
-    gap: 40px;
+  gap: 40px;
   justify-content: end;
   font-weight: 400;
   font-size: 16px;
@@ -184,6 +200,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-item:hover,
@@ -196,15 +213,23 @@ address {
 /* hero-section */
 
 .hero-section {
+ 
   padding: 188px 0;
-  background-color: var(--primary-title);
+  background-color: #2e2f42;
   color: #ffffff;
+   
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7)) ,url(../images/people-office\ 1.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  background-position: center;
+
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .hero-title {
@@ -228,7 +253,7 @@ address {
   color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -259,10 +284,10 @@ address {
 
 .features-list-item {
   width: 264px;
-  
+
 }
 
-.features-icon{
+.features-icon {
   position: relative;
   display: block;
   width: 264px;
@@ -272,10 +297,10 @@ address {
   border-radius: 4px;
   padding: 24px 100px;
   margin-bottom: 8px;
- 
+
 }
 
-.features-icon-item{
+.features-icon-item {
   background-color: #4d5ae5;
 }
 
@@ -324,23 +349,12 @@ address {
   width: 264px;
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-icon-list{
-  display: flex;
-  width: 264px;
-  
-}
 
-.icon-list-item{
- width: 40px;
- height: 40px;
-}
-
-.team-icon-link{
- fill: #f4f4fd;
- 
-}
 
 .content-team {
   padding: 32px 16px;
@@ -366,9 +380,32 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+}
 
+.team-social-list {
+  display: flex;
+  column-gap: 24px;
+  margin-top: 8px;
+}
 
+.social-list-item {}
 
+.social-icon-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--Primary-Brand);
+  fill: #F4F4FD;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: #404BBF;
 }
 
 /* End Team */
@@ -396,8 +433,46 @@ address {
   list-style: none;
 }
 
-.portfolio-list-item {
+ .portfolio-list-item{
+  position: relative;
+  overflow: hidden;
   width: calc((100% - 48px) / 3);
+ 
+}
+ .portfolio-list-item:hover{
+ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+ box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  background-color: var(--Primary-Brand);
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  overflow: auto;
+}
+
+.portfolio-list-item:hover .portfolio-overlay {
+  opacity: 1;
+  transform: translateY(0%);
+ 
+}
+
+.portfolio-overlay-text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #F4F4FD;
+  padding: 40px 32px 32px;
+
 }
 
 .portfolio-content {
@@ -405,7 +480,7 @@ address {
   border-left: 1px solid #E7E9FC;
   border-bottom: 1px solid #E7E9FC;
   border-right: 1px solid #E7E9FC;
- 
+
 }
 
 
